@@ -5,6 +5,7 @@ import SuperSection from "./components/SuperSection";
 import Banners from "./components/Banners";
 import CategoryCard from "./components/CategoryCard";
 import burgerImg from "/src/assets/burger image.jpeg"; // Add your image here
+import HeroSection from "./components/Herosection";
 
 export default function App() {
   return (
@@ -27,6 +28,7 @@ export default function App() {
           image={burgerImg}
         />
       </div>
+      <HeroSection />
 
     </>
   );

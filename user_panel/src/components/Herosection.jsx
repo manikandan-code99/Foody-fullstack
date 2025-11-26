@@ -2,7 +2,7 @@ import React from 'react'
 import { FaMotorcycle, FaStar, FaShoppingBasket } from 'react-icons/fa'
 import Ingredients from './Ingredients'
 import Buttons from './Buttons'
-import burgerImg from '../assets/burr.webp'
+import burgerImg from '../assets/cbb.png'
 
 
 export default function HeroSection(){
