@@ -41,9 +41,9 @@ export default function SuperSection() {
   };
 
   return (
-    <section className="mt-8 bg-softBeige rounded-lg p-6 shadow-md">
+    <section className="mt-8 bg-[#F5ECDD] rounded-lg p-6 shadow-md">
       <div className="flex items-center justify-between mb-4">
-        <h2 className="text-2xl font-semibold">Super Delicious</h2>
+        <h2 className="text-2xl z-0 font-semibold">Super Delicious</h2>
         <div className="flex gap-2">
           <button onClick={() => scroll("left")} className="bg-yellow-400 p-2 rounded">◄</button>
           <button onClick={() => scroll("right")} className="bg-yellow-400 p-2 rounded">►</button>
@@ -60,10 +60,10 @@ export default function SuperSection() {
 
       <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="rounded-lg overflow-hidden shadow">
-          <img src="/mnt/data/Screenshot 2025-11-25 110911.png" alt="left banner" className="w-full h-48 object-cover"/>
+          <img src="\src\assets\left image.png" alt="left banner" className="w-full h-48 object-cover"/>
         </div>
         <div className="rounded-lg overflow-hidden shadow">
-          <img src="/mnt/data/Screenshot 2025-11-25 110911.png" alt="right banner" className="w-full h-48 object-cover"/>
+          <img src="\src\assets\right image.png" alt="right banner" className="w-full h-48 object-cover"/>
         </div>
       </div>
     </section>

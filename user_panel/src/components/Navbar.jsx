@@ -7,7 +7,7 @@ export default function Navbar() {
         <div className="flex items-center gap-4">
           <div className="flex items-center gap-2">
             <div className="w-10 h-10 rounded-full bg-yellow-400 flex items-center justify-center">
-              <span className="text-sm font-bold text-black">F</span>
+              <span className="text-sm font-bold text-black">Foodata</span>
             </div>
             <span className="text-white font-semibold">Foodata</span>
           </div>
