@@ -9,7 +9,7 @@ const heroImage = "/mnt/data/Screenshot 2025-11-25 110911.png";
 
 export default function Hero() {
   return (
-    <section className="w-full hero-dim" style={{ backgroundColor: '#0b0b0b' }}>
+    <section className="w-full hero-dim bg-cover bg-center bg-no-repeat"style={{backgroundImage: "url('src/assets/pizza image.jpeg')"}}>
       <div className="max-w-6xl mx-auto px-4 md:px-8 py-14 md:py-20 flex flex-col md:flex-row gap-8 items-center">
         {/* Left Text */}
         <div className="md:w-1/2 text-white">
@@ -28,13 +28,13 @@ export default function Hero() {
 
         {/* Right Image */}
         <div className="md:w-1/2 flex justify-end w-full">
-          <div className="w-80 md:w-[520px] h-[320px] md:h-[420px] overflow-hidden rounded-r-lg shadow-lg">
+          {/* <div className="w-80 md:w-[520px] h-[320px] md:h-[420px] overflow-hidden rounded-r-lg shadow-lg">
             <img
-              src={heroImage}
+              src="src\assets\pizza image.jpeg"
               alt="pizza hero"
               className="w-full h-full object-cover object-right"
             />
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
