@@ -2,17 +2,14 @@ import React from "react";
 
 export default function CategoryCard({ title, productsCount, image }) {
   return (
-    <div
-      className="
+    <div className="
         w-45 h-48 bg-white rounded-3xl border-2 border-white
         flex flex-col items-center justify-center
         transition-all duration-300 cursor-pointer mt-5 
-        hover:border-green-500 hover:shadow-xl hover:-translate-y-2
-      "
-    >
+        hover:border-green-500 hover:shadow-xl hover:-translate-y-2">
       <div className="w-28 h-28 flex items-center justify-center mb-4">
         <img
-          src="src\assets\burger image.jpeg"
+          src={image}
           alt={title}
           className="w-full h-full object-contain transition-all duration-300"
         />
@@ -35,61 +32,3 @@ export default function CategoryCard({ title, productsCount, image }) {
   );
 }
 
-
-
-
-
-
-
-
-//Category Slider code 
-
-
-// import React from "react";
-// import { Swiper, SwiperSlide } from "swiper/react";
-// import { Autoplay } from "swiper/modules";
-
-// // import " Swiper styles";
-// import "swiper/css";
-// import "swiper/css/autoplay";
-
-// import CategoryCard from "./CategoryCard";
-
-// // Example images
-// import burgerImg from "../assets/burger image.jpeg";
-// // import friesImg from "src/assets/burger image.jpeg";
-// // import cokeImg from "src/assets/burger image.jpeg";
-
-// export default function CategorySlider() {
-//   const categories = [
-//     { title: "Burgers", productsCount: 20, image: burgerImg },
-//     { title: "Fries", productsCount: 15, image: burgerImg },
-//     { title: "Drinks", productsCount: 10, image: burgerImg },
-//     { title: "Snacks", productsCount: 18, image: burgerImg },
-//     { title: "Hot Dogs", productsCount: 12, image: burgerImg },
-//   ];
-
-//   return (
-//     <Swiper
-//       spaceBetween={20}
-//       slidesPerView={3}
-//       loop={true}
-//       autoplay={{
-//         delay: 1200,
-//         disableOnInteraction: false,
-//       }}
-//       modules={[Autoplay]}
-//       className="mySwiper py-5"
-//     >
-//       {categories.map((cat, index) => (
-//         <SwiperSlide key={index}>
-//           <CategoryCard
-//             title={cat.title}
-//             productsCount={cat.productsCount}
-//             image="src\assets\burger image.jpeg"
-//           />
-//         </SwiperSlide>
-//       ))}
-//     </Swiper>
-//   );
-// }

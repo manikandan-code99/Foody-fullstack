@@ -1,11 +1,13 @@
-import React from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-import SuperSection from "./components/SuperSection";
 import Banners from "./components/Banners";
-import CategoryCard from "./components/CategoryCard";
-import burgerImg from "/src/assets/burger image.jpeg"; // Add your image here
-import HeroSection from "./components/Herosection";
+import Offerpage from "./components/Offerpage";
+import CategoryCardSlider from "./components/CategoryCardSlider";
+import Feedback from "./components/Feedback";
+import Delivery from "./components/Delivery";
+import Restaruntpags from "./components/Restaruntpags";
+import "./index.css";
+import Footer from "./components/Footer";
 
 export default function App() {
   return (
@@ -15,20 +17,20 @@ export default function App() {
         <Navbar />
         <Hero />
         <main className="max-w-6xl mx-auto px-4 md:px-8 -mt-10">
-          <SuperSection />
+          <CategoryCardSlider />
           <Banners />
+          <Restaruntpags/>
+
+          
         </main>
+                  <Feedback/>
+         <Offerpage />
+       <Delivery/>
+      <Footer/>
       </div>
 
-
-      <div className=" flex ">
-        <CategoryCard
-          title="Burgers"
-          products="20"
-          image={burgerImg}
-        />
-      </div>
-      <HeroSection />
+      
+      
 
     </>
   );

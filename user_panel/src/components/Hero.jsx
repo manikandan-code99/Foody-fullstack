@@ -1,10 +1,4 @@
-import React from "react";
 
-/**
- * NOTE: This uses the uploaded image path directly.
- * If your environment requires moving the file to /public or /src/assets,
- * replace the path below accordingly.
- */
 const heroImage = "/mnt/data/Screenshot 2025-11-25 110911.png";
 
 export default function Hero() {
@@ -28,13 +22,7 @@ export default function Hero() {
 
         {/* Right Image */}
         <div className="md:w-1/2 flex justify-end w-full">
-          {/* <div className="w-80 md:w-[520px] h-[320px] md:h-[420px] overflow-hidden rounded-r-lg shadow-lg">
-            <img
-              src="src\assets\pizza image.jpeg"
-              alt="pizza hero"
-              className="w-full h-full object-cover object-right"
-            />
-          </div> */}
+         
         </div>
       </div>
     </section>
