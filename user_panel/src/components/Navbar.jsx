@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
@@ -12,10 +13,11 @@ export default function Navbar() {
             <span className="text-white font-semibold">Foodata</span>
           </div>
           <ul className="hidden md:flex items-center gap-6 text-sm text-black/90 ">
-            <li>Home Pages</li>
-            <li>Registration</li>
+            <li> <Link to="/">Home</Link></li>
+            <li><Link to="/register">Register</Link></li>
             <li>Blog</li>
-            <li>All Vendors</li>
+            <li><Link to="/contact">Contact us</Link></li>
+            <li><Link to="/vendor">All Vendors</Link></li>
             <li>Select Location</li>
           </ul>
         </div>
