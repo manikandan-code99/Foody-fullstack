@@ -17,7 +17,15 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import RegisterPage from "./pages/RegisterPage";
-import Vendor from "./pages/Vendor";
+// import VendorM from "./pages/VendorMember";
+import VendorMember from "./pages/VendorMember";
+import VendorPlans from "./pages/VendorPlans";
+import VendorConfirmation from "./pages/VendorConfirmation";
+import VendorRegistration from "./pages/VendorRegistration";
+import VendorThankYou from "./pages/VendorThankYou"
+import Blog from "./pages/Blog";
+import All_vendors from "./pages/All_vendors.jsx";
+import User_Auth from "./pages/User_Auth.jsx"
 
 export default function App() {
   return (
@@ -30,8 +38,18 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/Blog" element={<Blog/>}/>
+        <Route path="/All_vendors" element={<All_vendors/>}/>
+        <Route path="/User_Auth" element={<User_Auth/>}/>
+
+
         <Route path="/register" element={<RegisterPage />} />
-        <Route path="/vendor" element={<Vendor />} />
+        <Route path="/vendorM" element={<VendorMember />}>
+            <Route path="plans" element={<VendorPlans />} />
+          <Route path="registration" element={<VendorRegistration />} />
+          <Route path="confirmation" element={<VendorConfirmation />} />
+          <Route path="thankyou" element={<VendorThankYou />} />
+        </Route>
         
       </Routes>
       <Footer/>

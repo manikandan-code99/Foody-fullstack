@@ -6,6 +6,10 @@ import {
     FaYoutube,
 } from "react-icons/fa";
 
+import logo from "../assets/logo image.svg"
+import Footer1 from "../assets/Footer1.jpeg"
+import Footer2 from "../assets/Footer2.jpeg"
+
 export default function Footer() {
     return (
         <footer className="bg-black text-white pt-28 pb-10 px-6 md:px-16">
@@ -16,9 +20,9 @@ export default function Footer() {
                 <div className="space-y-6">
                     {/* Logo */}
                     <img
-                        src="src\assets\logo image.svg"
+                        src={logo}
                         alt="Logo"
-                        className="w-28 mb-5"
+                        className="w-35 mb-5"
                     />
 
                     {/* Description */}
@@ -30,13 +34,13 @@ export default function Footer() {
                     {/* Phone */}
                     <p className="font-sans">
                         <p className=" font-medium mb-1">📞 Phone</p>
-                        <p className="text-gray-300 text-sm mb-4">+91 98765 43210</p>
+                        <p className="text-gray-300 text-sm mb-2">+91 98765 43210</p>
                     </p>
 
                     {/* Email */}
                     <p className="font-sans">
                         <p className=" font-medium mb-1">📧 Email</p>
-                        <p className="text-gray-300 text-sm mb-4">support@example.com</p>
+                        <p className="text-gray-300 text-sm mb-2">support@example.com</p>
                     </p>
 
                     {/* Social Icons */}
@@ -62,6 +66,7 @@ export default function Footer() {
                         ))}
                     </ul>
                 </div>
+                
 
                 {/* ---------------------- COLUMN 3 ---------------------- */}
                 <div>
@@ -70,7 +75,7 @@ export default function Footer() {
                     {/* ITEM 1 */}
                     <div className="flex gap-4 mb-6">
                         <img
-                            src="src\assets\tandoori image.jpg"
+                            src={Footer1}
                             alt="news"
                             className="rounded-lg object-cover"
                             style={{ width: "70px", height: "70px" }}
@@ -87,7 +92,7 @@ export default function Footer() {
                     {/* ITEM 2 */}
                     <div className="flex gap-4">
                         <img
-                            src="/src/assets/Tandoori-Chicken.jpg"
+                            src={Footer2}
                             alt="news"
                             className="rounded-lg object-cover"
                             style={{ width: "70px", height: "70px" }}
@@ -117,7 +122,9 @@ export default function Footer() {
                             )
                         )}
                     </ul>
+                    
                 </div>
+                
             </div>
 
             {/* ---------------------- BOTTOM BAR ---------------------- */}
@@ -126,6 +133,7 @@ export default function Footer() {
                     Copyright 2025 © Theme Created By Scriptsbundle All Rights Reserved
                 </p>
             </div>
+            
         </footer>
     );
 }
