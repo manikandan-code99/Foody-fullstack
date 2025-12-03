@@ -4,6 +4,7 @@ import { FaMotorcycle, FaStar, FaShoppingBasket } from 'react-icons/fa'
 // import Buttons from './Buttons'
 import burgerImg from '../assets/cbb.png'
 import { FaCheckCircle } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 
 
 
@@ -87,12 +88,14 @@ SAVE<br/>50%<br/>
 </ul>
 </div>
 <div className="flex flex-col sm:flex-row gap-4 mt-2">
+<Link to={'/All_vendors'}>
 <button className="bg-black/70 text-white px-6 py-3 rounded-md font-medium shadow-md transform transition hover:scale-105 hover:shadow-xl">
 Search Now
-</button>
+</button></Link>
+<Link to={'/All_vendors'}>
 <button onClick={handleOrder} className="bg-yellow-400 text-black px-6 py-3 rounded-md font-medium shadow-md transform transition hover:scale-105 hover:shadow-xl">
 Order Food
-</button>
+</button></Link>
 </div>
 </div>
 

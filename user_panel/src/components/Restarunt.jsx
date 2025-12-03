@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import burger from '../assets/burger image.jpeg';
 
 export default function RestaurantCard({ name, time, rating, location }) {
@@ -12,7 +13,7 @@ export default function RestaurantCard({ name, time, rating, location }) {
         className="w-full h-48 object-cover"
       />
 
-      <div className="p-4 space-y-2">
+      <Link to={'/rest_info'} ><div className="p-4 space-y-2">
 
         {/* Time */}
         <div className="flex items-center text-sm text-gray-500 gap-2">
@@ -37,7 +38,7 @@ export default function RestaurantCard({ name, time, rating, location }) {
           <span className="text-yellow-500">📍</span>
           <span>{location}</span>
         </div>
-      </div>
+      </div></Link>
     </div>
   );    
 }

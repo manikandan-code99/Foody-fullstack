@@ -1,5 +1,6 @@
 import { FaSearch, FaPizzaSlice } from "react-icons/fa";
 import deliveryy from "../assets/delivery.png"; // use transparent PNG image
+import { Link } from "react-router-dom";
 
 export default function DeliveryLanding() {
   return (
@@ -30,11 +31,11 @@ export default function DeliveryLanding() {
         {/* Buttons */}
         <div className="flex space-x-6">
           <button className="flex items-center bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-3 px-8 rounded-md shadow-lg tracking-wide">
-            <FaSearch className="mr-2 text-lg" /> SEARCH NOW
+            <Link to={'/All_vendors'}><FaSearch className="mr-2 text-lg" /> SEARCH NOW</Link>
           </button>
 
           <button className="flex items-center bg-neutral-900 hover:bg-black text-white font-bold py-3 px-8 rounded-md shadow-lg tracking-wide">
-            <FaPizzaSlice className="mr-2 text-lg" /> ORDER FOOD
+            <Link to={'/All_vendors'}><FaPizzaSlice className="mr-2 text-lg" /> ORDER FOOD</Link>
           </button>
         </div>
       </div>

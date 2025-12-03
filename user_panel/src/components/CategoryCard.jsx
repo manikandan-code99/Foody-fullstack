@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function CategoryCard({ title, productsCount, image }) {
   return (
@@ -7,7 +8,7 @@ export default function CategoryCard({ title, productsCount, image }) {
         flex flex-col items-center justify-center
         transition-all duration-300 cursor-pointer mt-5 
         hover:border-green-500 hover:shadow-xl hover:-translate-y-2">
-      <div className="w-28 h-28 flex items-center justify-center mb-4">
+      <Link to={'/food_details'}> <div className="w-28 h-28 flex items-center justify-center mb-4">
         <img
           src={image}
           alt={title}
@@ -27,7 +28,7 @@ export default function CategoryCard({ title, productsCount, image }) {
         "
       >
         {productsCount} products
-      </span>
+      </span></Link>
     </div>
   );
 }

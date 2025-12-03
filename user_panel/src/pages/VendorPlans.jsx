@@ -1,7 +1,14 @@
-export default function Plans() {
-  return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-6xl px-4">
 
+import { useNavigate } from "react-router-dom";
+
+
+export default function Plans() {
+  const navigate = useNavigate();
+
+  return (
+    <> 
+    {/* <h1 className="text-2xl font-bold mb-6">Plans</h1> */}
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-6xl px-4">
       {/* BASIC PLAN */}
       <div className="border-2 border-yellow-500 rounded-xl p-6 flex flex-col justify-between">
         <div>
@@ -28,7 +35,7 @@ export default function Plans() {
             <p className="font-bold">200</p>
           </div>
 
-          <button className="w-full mt-4 py-3 bg-yellow-500 text-black font-semibold rounded-lg hover:bg-yellow-600 transition">
+          <button onClick={() => navigate("registration")} className="w-full mt-4 py-3 bg-yellow-500 text-black font-semibold rounded-lg hover:bg-yellow-600 transition">
             GET STARTED
           </button>
         </div>
@@ -60,7 +67,7 @@ export default function Plans() {
             <p className="font-bold">400</p>
           </div>
 
-          <button className="w-full mt-4 py-3 bg-black text-white font-semibold rounded-lg hover:bg-gray-900 transition">
+          <button onClick={() => navigate("registration")} className="w-full mt-4 py-3 bg-black text-white font-semibold rounded-lg hover:bg-gray-900 transition">
             GET STARTED
           </button>
         </div>
@@ -92,12 +99,13 @@ export default function Plans() {
             <p className="font-bold">600</p>
           </div>
 
-          <button className="w-full mt-4 py-3 bg-yellow-500 text-black font-semibold rounded-lg hover:bg-yellow-600 transition">
+          <button onClick={() => navigate("registration")} className="w-full mt-4 py-3 bg-yellow-500 text-black font-semibold rounded-lg hover:bg-yellow-600 transition">
             GET STARTED
           </button>
         </div>
       </div>
 
     </div>
+    </>
   );
 }

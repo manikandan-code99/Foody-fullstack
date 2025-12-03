@@ -1,0 +1,19 @@
+Django
+✔ REST Framework
+✔ PostgreSQL (best)
+✔ JWT Authentication
+✔ Separate Vendor JWT
+✔ Vendor → FoodItem foreign key
+✔ Users separate
+✔ Vendors separate
+
+ ✔ FoodItem model connected to Vendor
+✔ Vendor-only access to their products
+✔ API for:
+Vendor signup
+Vendor login
+Add food
+Edit food
+Delete food
+Vendor can only see own food
+Users see all food

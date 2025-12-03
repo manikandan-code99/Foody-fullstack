@@ -9,8 +9,10 @@ import {
 import logo from "../assets/logo image.svg"
 import Footer1 from "../assets/Footer1.jpeg"
 import Footer2 from "../assets/Footer2.jpeg"
+import { Link } from "react-router-dom";
 
 export default function Footer() {
+   
     return (
         <footer className="bg-black text-white pt-28 pb-10 px-6 md:px-16">
             {/* GRID CONTAINER */}
@@ -32,16 +34,16 @@ export default function Footer() {
                     </p>
 
                     {/* Phone */}
-                    <p className="font-sans">
+                    <h6 className="font-sans">
                         <p className=" font-medium mb-1">📞 Phone</p>
                         <p className="text-gray-300 text-sm mb-2">+91 98765 43210</p>
-                    </p>
+                    </h6>
 
                     {/* Email */}
-                    <p className="font-sans">
+                    <h6 className="font-sans">
                         <p className=" font-medium mb-1">📧 Email</p>
                         <p className="text-gray-300 text-sm mb-2">support@example.com</p>
-                    </p>
+                    </h6>
 
                     {/* Social Icons */}
                     <div className="flex items-center gap-6 ">
@@ -108,22 +110,24 @@ export default function Footer() {
                 </div>
 
                 {/* ---------------------- COLUMN 4 ---------------------- */}
-                <div className="px-6">
-                    <h2 className="text-xl font-serif mb-6">Useful Links</h2>
-                    <ul className="space-y-4 text-sm font-sans">
-                        {["All Vendors", "Home 5", "Home 6", "Home 7", "Pricing Plan"].map(
-                            (item) => (
-                                <li
-                                    key={item}
-                                    className="hover:text-[#FFD700] hover:translate-x-1 transition cursor-pointer"
-                                >
-                                    {item}
-                                </li>
-                            )
-                        )}
-                    </ul>
-                    
-                </div>
+               <div className="px-6">
+  <h2 className="text-xl font-serif mb-6">Useful Links</h2>
+
+  <ul className="space-y-4 text-sm font-sans">
+
+    {/* All Vendors */}
+    <li className="hover:text-[#FFD700] hover:translate-x-1 transition cursor-pointer">
+      <Link to="/All_vendors">All Vendors</Link>
+    </li>
+
+    {/* Pricing Plan */}
+    <li className="hover:text-[#FFD700] hover:translate-x-1 transition cursor-pointer">
+      <Link to="/vendorM">Pricing Plan</Link>
+    </li>
+
+  </ul>
+</div>
+
                 
             </div>
 

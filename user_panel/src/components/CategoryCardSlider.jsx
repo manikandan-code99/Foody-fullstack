@@ -25,8 +25,8 @@ export default function CategorySlider() {
   ];
 
   return (
-    <section className="mt-8 bg-[#F5ECDD] rounded-lg p-6 shadow-md">
-      <div className="flex items-center justify-between mb-4">
+    <section className="mt-8 bg-[#F5ECDD] rounded-lg overflow-hidden p-6 shadow-md">
+      <div className="flex items-center justify-between mb-4 ">
         <h2 className="text-2xl z-0 font-semibold">Super Delicious</h2>
         <div className="flex gap-2">
           <button onClick={() => scroll("left")} className="bg-yellow-400 p-2 rounded">◄</button>
