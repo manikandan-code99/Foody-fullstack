@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import pho from '../assets/pizzaimg';
+import pho from '../assets/pizzaimg.png';
 
 export default function CategoryCard({ title, productsCount, image }) {
   return (

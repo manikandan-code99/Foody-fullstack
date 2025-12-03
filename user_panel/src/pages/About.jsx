@@ -1,7 +1,7 @@
 import React from 'react'
-import pizza from '../assets/pizza image'
-import girl from '../assets/girl image'
-import clint from '../assets/clint'
+import pizza from '../assets/pizza image.jpeg'
+import girl from '../assets/cbb.png'
+import clint from '../assets/cbb.png'
 
 const About = () => {
     const donuts = [

@@ -9,8 +9,8 @@ import CategoryCard from "./CategoryCard";
 
 // Example images
 import burgerImg from "../assets/burger image.jpeg";
-import left from "../assets/left image";
-import right from "../assets/right image";
+import left from "../assets/left image.png";
+import right from "../assets/right image.png";
 
 
 export default function CategorySlider() {

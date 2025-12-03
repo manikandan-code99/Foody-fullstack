@@ -1,13 +1,13 @@
 
 const heroImage = "/mnt/data/Screenshot 2025-11-25 110911.png";
-import {burr} from '../assets/burr'
+import burr from '../assets/pizzaimg.png'
 
 export default function Hero() {
   return (
-    <section className="w-full hero-dim bg-cover bg-center bg-no-repeat"style={{backgroundImage: {burr}}}>
+    <section className="w-full hero-dim bg-cover bg-center bg-no-repeat backdrop-opacity-90" style={{ backgroundImage: `url(${burr}`}}>
       <div className="max-w-6xl mx-auto px-4 md:px-8 py-14 md:py-20 flex flex-col md:flex-row gap-8 items-center">
         {/* Left Text */}
-        <div className="md:w-1/2 text-white">
+        <div className="md:w-1/2  text-white">
           <p className="text-sm mb-3">Fast &amp; Hot Burger Delivery</p>
           <h1 className="text-4xl md:text-6xl font-bold text-brandYellow leading-tight">
             Order Healthy &amp; <br /> Fresh Food Any Time
@@ -16,7 +16,7 @@ export default function Hero() {
             Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero,
             sit amet adipiscing sem neque sed ipsum.
           </p>
-          <button className="mt-6 bg-brandYellow text-black px-4 py-2 rounded font-semibold">
+          <button className="mt-6 bg-brandYellow text-black px-4 py-2 bg-amber-100 rounded font-semibold">
             Explore More!
           </button>
         </div>
