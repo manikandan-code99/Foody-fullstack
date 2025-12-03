@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import pho from '../assets/pizzaimg';
 
 export default function CategoryCard({ title, productsCount, image }) {
   return (
@@ -10,7 +11,7 @@ export default function CategoryCard({ title, productsCount, image }) {
         hover:border-green-500 hover:shadow-xl hover:-translate-y-2">
       <Link to={'/food_details'}> <div className="w-28 h-28 flex items-center justify-center mb-4">
         <img
-          src={image}
+          src={pho}
           alt={title}
           className="w-full h-full object-contain transition-all duration-300"
         />

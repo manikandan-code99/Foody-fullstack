@@ -1,4 +1,7 @@
 import React from 'react'
+import pizza from '../assets/pizza image'
+import girl from '../assets/girl image'
+import clint from '../assets/clint'
 
 const About = () => {
     const donuts = [
@@ -60,7 +63,7 @@ const teamData = [
                 {/* ===================== SECTION 1 — HERO IMAGE ===================== */}
                 <div className="relative w-full">
                     <img
-                        src="src\assets\pizza image.jpeg"
+                        src={pizza}
                         alt="Pizza"
                         className="w-full h-[180px] md:h-[180px] lg:h-[180px] object-cover mt-10"
                     />
@@ -308,7 +311,7 @@ const teamData = [
 
                             {/* Main image */}
                             <img
-                                src="src\assets\girl image.png"
+                                src={girl}
                                 alt="girl holding donuts"
                                 className="object-contain h-[520px] md:h-[520px] lg:h-[620px] rounded-none"
                                 style={{ transform: "translateX(6%)" }}
@@ -392,7 +395,7 @@ const teamData = [
 
                                     {/* Main Chef Image */}
                                     <img
-                                        src="src\assets\clients image.png"
+                                        src={clint}
                                         alt="chef"
                                        
                                     />

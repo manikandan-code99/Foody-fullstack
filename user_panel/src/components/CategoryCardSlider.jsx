@@ -9,6 +9,9 @@ import CategoryCard from "./CategoryCard";
 
 // Example images
 import burgerImg from "../assets/burger image.jpeg";
+import left from "../assets/left image";
+import right from "../assets/right image";
+
 
 export default function CategorySlider() {
   const categories = [
@@ -56,10 +59,10 @@ export default function CategorySlider() {
     </Swiper>
     <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="rounded-lg overflow-hidden shadow">
-          <img src="\src\assets\left image.png" alt="left banner" className="w-full h-48 object-cover"/>
+          <img src={left} alt="left banner" className="w-full h-48 object-cover"/>
         </div>
         <div className="rounded-lg overflow-hidden shadow">
-          <img src="\src\assets\right image.png" alt="right banner" className="w-full h-48 object-cover"/>
+          <img src={right} alt="right banner" className="w-full h-48 object-cover"/>
         </div>
       </div>
     </section>

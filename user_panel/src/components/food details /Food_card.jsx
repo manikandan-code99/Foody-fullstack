@@ -1,9 +1,5 @@
 import React from "react";
 
-/**
- * ProductCard.jsx - small related product card
- * Props: item {img,category,title,price,oldPrice, sale}
- */
 export default function ProductCard({ item, tabs, active, onChange }) {
     return (
 

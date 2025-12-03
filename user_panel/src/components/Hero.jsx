@@ -1,9 +1,10 @@
 
 const heroImage = "/mnt/data/Screenshot 2025-11-25 110911.png";
+import {burr} from '../assets/burr'
 
 export default function Hero() {
   return (
-    <section className="w-full hero-dim bg-cover bg-center bg-no-repeat"style={{backgroundImage: "url('src/assets/pizza image.jpeg')"}}>
+    <section className="w-full hero-dim bg-cover bg-center bg-no-repeat"style={{backgroundImage: {burr}}}>
       <div className="max-w-6xl mx-auto px-4 md:px-8 py-14 md:py-20 flex flex-col md:flex-row gap-8 items-center">
         {/* Left Text */}
         <div className="md:w-1/2 text-white">
