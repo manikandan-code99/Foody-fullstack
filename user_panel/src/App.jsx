@@ -27,7 +27,7 @@ import Rest_info from './components/restatunt_details/Rest_info'
 import ReviewPage from './components/restatunt_details/ReviewPage';
 
 //food details
-import Food_details from "./components/food details /Food_details.jsx";
+import Food_details from "./components/food_details /Food_details.jsx";
 
 
 export default function App() {
