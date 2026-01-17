@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+
+/* small helpers */
+.sidebar-link {
+  @apply flex items-center gap-3 p-3 rounded hover:bg-gray-100;
+}

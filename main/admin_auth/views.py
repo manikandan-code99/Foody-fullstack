@@ -31,7 +31,7 @@ class VendorLoginView(APIView):
 
         payload = {
             "vendor_id": vendor.id,
-            "exp": datetime.datetime.utcnow() + datetime.timedelta(days=1),
+            "exp": datetime.datetime.utcnow() + datetime.timedelta(minutes=15),
             "iat": datetime.datetime.utcnow(),
         }
 

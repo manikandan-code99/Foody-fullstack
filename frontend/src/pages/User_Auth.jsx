@@ -2,6 +2,8 @@
 import React, { useState } from "react";
 import { FaEye } from "react-icons/fa";
 import { FaEyeSlash } from "react-icons/fa6";
+import { Link } from "react-router-dom";
+
 
 export default function AuthPage() {
 
@@ -138,7 +140,7 @@ export default function AuthPage() {
                                 type="button"
                                 className="w-full bg-yellow-300 hover:bg-yellow-400 text-black font-semibold h-12 rounded-md transition"
                             >
-                                Become A Vendor
+                                <Link  to="/vendorM">Become A Vendor</Link>
                             </button>
                         </div>
                     </section>
